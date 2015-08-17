@@ -6,8 +6,11 @@ public class Person {
     private int height;
    
     
-    public Person(String initialName) {
-        this.age = 0;
+    public Person(String name) {
+        this(name, 0);
+    }
+    public Person(String initialName, int age) {
+        this.age = age;
         this.name = initialName;
         this.weight = 0;
         this.height = 0;
@@ -27,6 +30,14 @@ public class Person {
     
     public void setWeight(int newWeight) {
         this.weight = newWeight;
+    }
+    
+    public int getHeight() {
+        return this.height;
+    }
+    
+    public int getWeight() {
+        return this.weight;
     }
     
     public int getAge() {
