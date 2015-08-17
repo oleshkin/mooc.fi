@@ -11,10 +11,6 @@ public class Person {
         return this.name + ", age " + this.age + " years";
     }
     
-    public void printPerson() {
-        System.out.println(this.name + ", age " + this.age + " years");
-    }
-    
     public void becomeOlder() {
         this.age++;
     }
